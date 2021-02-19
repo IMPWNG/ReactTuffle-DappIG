@@ -17,9 +17,16 @@ contract Decentragram {
     uint tipAmount;
     address payable author;
   }
+  
+  event ImageCreated{
+    uint id;
+    string hash;
+    string description;
+    uint tipAmount;
+    address payable author;
+  }
 
   //Create Images
-
   
   
   function uploadImage(string memory _imgHash, string memory _description) public {
